@@ -40,6 +40,9 @@ class BinaryTree {
 
     int count(int val) {
         int found = 0;
+        if (!contain(val)) {
+            return found;
+        }
         for (int i : treeData) {
             if (i == val) {
                 found++;
